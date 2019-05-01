@@ -1,0 +1,100 @@
+\documentclass[letter, 12pt]{article}
+\usepackage{comment} % enables the use of multi-line comments (\ifx \fi) 
+\usepackage{lipsum} %This package just generates Lorem Ipsum filler text. 
+\usepackage{graphicx}
+\usepackage{fullpage} % changes the margin
+\usepackage{natbib}
+\bibliographystyle{abbrvnat}
+\setcitestyle{authoryear,open={(},close={)}}
+
+\begin{document}
+%Update this information!!!!
+\noindent
+\large\textbf{CMPT 440 -- Spring 2019: Quantum Finite Automata} \\ \\
+\textbf{Herbert Glaser} \\
+\normalsize   Due Date: Wednesday, May 1, 2019.
+
+
+\section*{Introduction}
+Quantum finite automata is the combination between quantum mechanics and finite automata. It was first introduced by Moor and Crutchfield [1] and Kondacs and Watrous [2]. There are two different types of quantum finite automata 1-way and 2-way QFAs. 1-way QFAs recognize all languages as regular languages and tend to have less states than normal DFAs. 2-Way QFAs recognize non-regular languages and also tend to have less states than normal DFAs. It can be
+described as:
+
+$T=(M=(Q, \Sigma, \delta, q_0, q_a_c_c,  q_r_e_j))$.
+
+Q is a finite set of
+states, $\Sigma$ is an input alphabet, $\delta$ is transition function, $q_0$ is
+starting state,$q_a_c_c$  Q is accepting state,  $q_r_e_j$ is reject state.[4]
+
+Quantum finite automata is used as a model of quantum computing. Quantum computing in general has the ability to drastically reduce the space taken by normal finite automata.
+
+
+
+
+
+\section*{An Example}
+
+Here is an example of a 1-way QFA.
+
+\begin{equation}
+    V_a(|q_0>)=\frac{1}{2}
+    |q_0)+\frac{1}{2}|q_1) + \frac {1}{\sqrt{2}} |q_r_e_j),
+\end{equation}
+
+\begin{equation}
+    V_a(|q_1>)=\frac{1}{2}
+    |q_0)+\frac{1}{2}|q_1) - \frac {1}{\sqrt{2}} |q_r_e_j),
+\end{equation}
+
+\begin{equation}
+    V_\$(|q_0>)=|q_r_e_j), V_\$(|q_1>)=|q_a_c_c)
+\end{equation}
+
+This QFA starts at state space is Q={$q_0, q_1, q_a_c_c, q_r_e_j$} the accepting states $Q_a_c_c = {q_a_c_c}$ and the rejecting states are $Q_r_e_j = {q_r_e_j}$[3]. Since QFAs are able to read any regular languages this allows any language to be the input.
+
+\section*{References}
+------------------------------------------------------------------------------------------------------------------------
+
+[1] C. Moore and J. P. Crutchﬁeld. Quantum automata and quantum grammars. Theoretical Computer Science, 237(1-2):275–306, 2000.
+
+[2] A. Kondacs and J. Watrous. On the power of quantum ﬁnite state automata. Proceedingsof FOCS’97, pages 66–75.
+
+[3] Ambainis, Andris & Freivalds, Rusins. (1998). 1-way quantum finite automata: Strengths, weaknesses and generalizations. Proc. 39th FOCS.
+
+[4] Nayak, Tanistha, and Tirtharaj Dash. Quantum Finite Automata, Quantum Pushdown Automata & Quantum Turing Machine: A Study. vol. 3, Quantum Finite Automata, Quantum Pushdown Automata & Quantum Turing Machine: A Study.
+
+
+
+
+
+
+
+
+
+%=============================================
+\bibliographystyle{acl}
+\bibliography{Cites.bib}
+
+\end{document}
+
+
+\ifx
+Comments!
+\fi
+
+% ===========
+
+\ifx
+
+%==============
+
+% References if you want it manual
+
+
+
+ [1] C. Moore and J. P. Crutchﬁeld. Quantum automata and quantum grammars. TheoreticalComputer Science, 237(1-2):275–306, 2000.
+
+ [2] A. Kondacs and J. Watrous. On the power of quantum ﬁnite state automata. Proceedingsof FOCS’97, pages 66–75.
+
+ [3] Ambainis, Andris & Freivalds, Rusins. (1998). 1-way quantum finite automata: Strengths, weaknesses and generalizations. Proc. 39th FOCS.
+
+ [4] Nayak, Tanistha, and Tirtharaj Dash. Quantum Finite Automata, Quantum Pushdown Automata & Quantum Turing Machine: A Study. vol. 3, Quantum Finite Automata, Quantum Pushdown Automata & Quantum Turing Machine: A Study.
